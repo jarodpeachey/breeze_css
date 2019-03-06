@@ -1,0 +1,454 @@
+<!DOCTYPe html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <link href="https://fonts.googleapis.com/css?family=Raleway: 400,500,600,700" rel="stylesheet">
+   <link rel="stylesheet" href="breeze.css">
+</head>
+
+<body>
+   <h1 class="title center-text mt-2 tablet-left-text tablet-ml-2">BreezeCSS</h1>
+   <section id="grid" class="section">
+      <div class="container">
+         <h2>Grid system</h2>
+         <div class="row desktop">
+            <div class="col col-6 mobile-lg-col-1"><div class="demo">Auto</div></div>
+            <div class="col col-6 mobile-lg-col-1"><div class="demo">Auto</div></div>
+            <div class="col col-6 mobile-lg-col-1"><div class="demo">Auto</div></div>
+            <div class="col col-6 mobile-lg-col-1"><div class="demo">Auto</div></div>
+         </div>
+         <p>*NOTE: <code>offset-(value)</code> becomes active from tablet up. If you have a row with a class of <code>mobile</code>,
+            use the <code>mobile-offset-(value)</code> class to add offset below tablet.</p>
+         <h3 class="title mt-5">Auto-scaling columns</h3>
+         <p class="subtitle">Breeze CSS columns scale as you add more!</p>
+         <div class="row mobile" id="columns">
+            <div class="col" name="block">
+               <div class="demo">1</div>
+            </div>
+            <div class="col" name="none" style="display: none;">
+               <div class="demo">2</div>
+            </div>
+            <div class="col" name="none" style="display: none;">
+               <div class="demo">3</div>
+            </div>
+            <div class="col" name="none" style="display: none;">
+               <div class="demo">4</div>
+            </div>
+            <div class="col" name="none" style="display: none;">
+               <div class="demo">5</div>
+            </div>
+            <div class="col" name="none" style="display: none;">
+               <div class="demo">6</div>
+            </div>
+            <div class="col" name="none" style="display: none;">
+               <div class="demo">7</div>
+            </div>
+            <div class="col" name="none" style="display: none;">
+               <div class="demo">8</div>
+            </div>
+            <div class="col" name="none" style="display: none;">
+               <div class="demo">9</div>
+            </div>
+            <div class="col" name="none" style="display: none;">
+               <div class="demo">10</div>
+            </div>
+            <div class="col" name="none" style="display: none;">
+               <div class="demo">11</div>
+            </div>
+            <div class="col" name="none" style="display: none;">
+               <div class="demo">12</div>
+            </div>
+         </div>
+         <button id="addColumn" class="primary">Add Column</button>
+         <button id="removeColumn" class="light">Remove Column</button>
+      </div>
+   </section>
+
+   <section class="secondary">
+      <div class="container py-5">
+         <h2>Typography</h2>
+         <p>Breeze CSS implements a rem based font size system, using a root size of 10px. With the html font size set
+            at 10px, all font-sizes can be globally changed by adjusting the html font size. Out of the box, Breeze CSS
+            uses a base 10 system, so 5.0rem is equal to 50px.</p>
+         <div class="row">
+            <div class="col col-6">
+               <p>Breeze CSS uses Raleway, which is served by Google's servers. Included are font weights 400, 500 and
+                  600, as well as <strong>strong</strong>, <em>emphasis</em> and <u>underline</u></p>
+            </div>
+            <div class="col col-6">
+               <h1 class="mb-2 mt-1">h1 Heading</h1>
+               <h2 class="mb-2">h2 Heading</h2>
+               <h3 class="mb-2">h3 Heading</h3>
+               <h4 class="mb-2">h4 Heading</h4>
+               <h5 class="mb-2">h5 Heading</h5>
+               <h6 class="mb-2">h6 Heading</h6>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="buttons">
+      <div class="container">
+         <h2>Buttons</h2>
+         <p>Breeze CSS includes standard <code class="element">button</code> styling, as well as other colors, sizes
+            and
+            styles.</p>
+         <p>The <code>.button</code> class can be used on:
+            <ul class="ml-3 mb-3">
+               <li>Links</li>
+               <li>Button elements</li>
+               <li>Form submit inputs</li>
+               <li>And reset inputs</li>
+            </ul>
+         </p>
+         <h4 class="mb-1"><strong>Standard Buttons</strong></h4>
+         <div>
+            <button>Standard</button>
+            <button class="primary">Primary</button>
+            <button class="accent">Accent</button>
+            <button class="link">Link</button>
+            <button class="info">Info</button>
+            <button class="success">Success</button>
+            <button class="warning">Warning</button>
+            <button class="danger">Danger</button>
+            <button class="light">Light</button>
+            <button class="dark">Dark</button>
+         </div><br><br>
+         <h4 class="mb-1"><strong>Small Buttons</strong></h4>
+         <div class="mb-3">
+            <button class="small">Small</button>
+            <button class="small primary">Small</button>
+         </div>
+         <h4 class="mb-1"><strong>Large Buttons</strong></h4>
+         <div class="mb-3">
+            <button class="large">Large</button>
+            <button class="primary large">Large</button>
+         </div>
+         <h4 class="mb-1"><strong>Wide Buttons</strong></h4>
+         <div>
+            <button>Normal</button>
+            <button class="primary">Normal</button>
+         </div>
+         <div class="mb-3">
+            <button class="wide">Wide</button>
+            <button class="primary wide">Wide</button>
+         </div>
+         <h4 class="mb-1"><strong>Outlined Buttons</strong></h4>
+         <div class="mb-3">
+            <button class="primary outline">Primary</button>
+            <button class="accent outline">Accent</button>
+            <button class="link outline">Link</button>
+            <button class="info outline">Info</button>
+            <button class="success outline">Success</button>
+            <button class="warning outline">Warning</button>
+            <button class="danger outline">Danger</button>
+         </div>
+         <h4><strong>Plain-text Buttons</strong></h4>
+         <div class="mb-3">
+            <button class="primary no-background ml-0 pl-0">Primary</button>
+            <button class="link no-background">Secondary</button>
+            <button class="info no-background">Info</button>
+            <button class="success no-background">Success</button>
+            <button class="warning no-background">Warning</button>
+            <button class="danger no-background">Danger</button>
+            <button class="dark no-background">Dark</button>
+         </div>
+      </div>
+   </section>
+
+   <section id="forms">
+      <div class="container">
+         <h2>Forms</h2>
+         <p>Forms are given basic styling, as well as inputs, selects, textarea and more.</p>
+         <p>For each input you have, wrap it in a label. Inside, include a span with a class of <code>.label-body</code>,
+            which will contain your label. Next, include your input.</p>
+         <form style="margin: 0 auto; float: left;">
+            <div class="row mobile">
+               <div class="col no-gap col-6">
+                  <div class="full-width input-element" for="">
+                     <label>Name</label>
+                     <input class="full-width tablet-mb-0" type="text" placeholder="Name">
+                  </div>
+               </div>
+               <div class="col col-6">
+                  <div class="full-width input-element" for="">
+                     <label>Email</label>
+                     <input class="full-width tablet-mb-0" type="text" placeholder="email">
+                  </div>
+               </div>
+            </div>
+            <div class="full-width input-element" for="">
+               <label>About yourself</label>
+               <textarea class="full-width" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+               <div class="float-right">
+                  <label class="inline" for="checkbox">
+                     <input type="checkbox" name="checkbox">
+                     <span class="label-body">I'd like to recieve updates</span>
+                  </label>
+               </div>
+               <button class="primary m-0 input-element">Submit</button>
+            </div>
+            <h4 class="mt-4">Dark forms</h4>
+            <div class="row">
+               <div class="col col-6">
+                  <div class="input-element dark">
+                     <label for="">Name</label>
+                     <input type="text" class="full-width" placeholder="Name">
+                  </div>
+               </div>
+               <div class="col col-6">
+                  <div class="input-element dark">
+                     <label for="">Email</label>
+                     <input type="text" class="full-width" placeholder="email">
+                  </div>
+               </div>
+            </div>
+            <div class="input-element dark">
+               <label for="">About yourself</label>
+               <textarea class="full-width" placeholder="Hobbies, interests, etc." id="" cols="30" rows="10"></textarea>
+            </div>
+            <h4 class="mt-4">Round forms</h4>
+            <div class="row">
+               <div class="col col-6">
+                  <div class="input-element round dark">
+                     <label for="">Name</label>
+                     <input type="text" class="full-width" placeholder="Name">
+                  </div>
+               </div>
+               <div class="col col-6">
+                  <div class="input-element round dark">
+                     <label for="">Email</label>
+                     <input type="text" class="full-width" placeholder="email">
+                  </div>
+               </div>
+            </div>
+            <div class="input-element round dark">
+               <label for="">About yourself</label>
+               <textarea class="full-width" placeholder="Hobbies, interests, etc." id="" cols="30" rows="10"></textarea>
+            </div>
+            <h4 class="mt-4">Inline forms</h4>
+            <div class="input-element inline tablet">
+               <label>Name</label>
+               <input type="text" placeholder="First Name">
+               <input type="text" placeholder="Last Name">
+            </div>
+            <div class="input-element inline tablet">
+               <label for="">How old are you?</label>
+               <input type="number">
+            </div>
+            <div class="input-element inline mobile" style="width: 400px; max-width: 100%;">
+               <label for="">Where do you live?</label>
+               <input type="text" placeholder="eg. Florida">
+               <button class="primary outline">Submit</button>
+            </div>
+            <h4 class="mt-5">Input groups</h4>
+            <div class="input-group">
+               <label for="">Contact Information</label>
+               <div class="input-group-body">
+                  <div class="input-element">
+                     <label for="">Name</label>
+                     <div class="row">
+                        <div class="col col-6"><input class="full-width" type="text" name="" placeholder="First name"
+                              id=""></div>
+                        <div class="col col-6"> <input class="full-width" type="text" name="" placeholder="Last name"
+                              id=""></div>
+                     </div>
+                  </div>
+                  <div class="input-element">
+                     <label for="">Email</label>
+                     <input type="text" email="" placeholder="Name" id="">
+                  </div>
+                  <div class="input-element">
+                     <label for="">Phone</label>
+                     <input type="tel" Phone="" placeholder="Phone" id="">
+                  </div>
+               </div>
+            </div>
+            <div class="input-group">
+               <label for="">Address</label>
+               <div class="input-group-body">
+                  <div class="input-element">
+                     <label for="">Stret Address</label>
+                     <input type="text" name="" class="full-width" id="" placeholder="1111 Oak Dr...">
+                  </div>
+                  <div class="input-element">
+                     <label for="">City</label>
+                     <input type="text" name="" id="" placeholder="FL">
+                  </div>
+                  <div class="input-element">
+                     <label for="">Zip Code</label>
+                     <input type="number" name="" id="" placeholder="13242">
+                  </div>
+               </div>
+            </div>
+         </form>
+         <div class="clear-float"></div>
+
+      </div>
+   </section>
+
+   <section class="clear-float">
+      <div class="container">
+         <h3>Lists</h3>
+         <p>Lists are given basic styles to make them easy to read and understand. Both unordered lists and ordered
+            lists support nested list. each nested list is given a different list style to distinguish them from their
+            parents.</p>
+         <div class="row">
+            <div class="col-6">
+               <ul class="full-width pr-3">
+                  <p class="list-title"><strong>List titles are used inside each list</strong></p>
+                  <li>Unordered lists are styled to be clean and easy to read.</li>
+                  <li>They also support nested list.
+                     <ul>
+                        <li>Nested lists can be both ordered and unordered.</li>
+                        <li>Third-tier lists are also supported in Breeze CSS
+                           <ul>
+                              <li>And even third-tier lists</li>
+                              <li>That's totally cool!</li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>I'm not as cool as the third-tier list.</li>
+               </ul><br>
+            </div>
+            <div class="col-6">
+               <ol class="full-width">
+                  <p class="list-title"><strong>Ordered lists are awesome, too!</strong></p>
+                  <li>Ordered lists have the same styling as unordered, except for the bullets on the front.</li>
+                  <li>Ordered lists also support nested lists
+                     <ul>
+                        <li>Nested lists can be both ordered and unordered.</li>
+                        <li>Third tier lists are also supported.
+                           <ol>
+                              <li>List item 1</li>
+                              <li>List item 2</li>
+                           </ol>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>That's it for lists!</li>
+               </ol><br>
+            </div>
+         </div>
+
+         <ul class="collection spaced">
+            <li class="collection-item">Food</li>
+            <li class="collection-item">Food</li>
+            <li class="collection-item">Food</li>
+            <li class="collection-item">Food</li>
+            <li class="collection-item">Food</li>
+            <li class="collection-item">Food</li>
+         </ul>
+      </div>
+   </section>
+
+   <section id="tables">
+      <div class="container">
+         <h3>Tables</h3>
+         <p>Tables are used for displaying data, and they shouldn't ever be confusing. That's why the default table in
+            Breeze CSS is simply designed. It's full reponsive, and adapts to all browser and mobile phone sizes. </p>
+         <p>There are two flavors of tables: standard and dark.</p>
+         <h5><strong>Standard</strong></h5>
+         <table>
+            <thead>
+               <th>Name</th>
+               <th>Age</th>
+               <th>City</th>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>James Parker</td>
+                  <td>37</td>
+                  <td>Tallahase</td>
+               </tr>
+               <tr>
+                  <td>Anna Smith</td>
+                  <td>23</td>
+                  <td>Philadelphia</td>
+               </tr>
+               <tr>
+                  <td>Charles Breckenridge</td>
+                  <td>67</td>
+                  <td>San Fransisco</td>
+               </tr>
+            </tbody>
+         </table>
+         <h5><strong>Dark</strong></h5>
+
+         <table class="dark">
+            <thead>
+               <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>City</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>James Parker</td>
+                  <td>37</td>
+                  <td>Tallahase</td>
+               </tr>
+               <tr>
+                  <td>Anna Smith</td>
+                  <td>23</td>
+                  <td>Philadelphia</td>
+               </tr>
+               <tr>
+                  <td>Charles Breckenridge</td>
+                  <td>67</td>
+                  <td>San Fransisco</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </section>
+   <section class="secondary">
+      <div class="container">
+         <h3 class="mt-0">Links</h3>
+         <p>Breeze CSS offers base styling for all links and link states, such as <a href="#">link</a>, <a href="#">hover</a>,
+            <a href="#">active</a> and <a href="#">visited</a>.</p>
+      </div>
+   </section>
+   <section>
+      <div class="container">
+         <div class="row mobile">
+            <div class="center-text col-4 offset-2">
+               <div>
+                  <img src="../Pet Finder App/petfinder_logo.png" alt="" class="full-width">
+                  <h4 class="title">Ease of Use</h4>
+                  <p>Breze makes it easy to create a responsive, mobile-first website design using only HTML. </p>
+               </div>
+            </div>
+            <div class="center-text col-4 offset-2">
+               <div>
+                  <img src="../Pet Finder App/petfinder_logo.png" alt="" class="full-width">
+                  <h4 class="title">Support</h4>
+                  <p>With a massive community of support, you can rest assured that any problem you come accross can be
+                     solved. </p>
+               </div>
+            </div>
+            <div class="center-text col-4 offset-2">
+               <div>
+                  <img src="../Pet Finder App/petfinder_logo.png" alt="" class="full-width">
+                  <h4 class="title">Open Source</h4>
+                  <p>Because Breeze is open-source, any problem that is found by you, the community, is promptly
+                     resolved as fast as possible. </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <script src="breeze.js">
+      formVal
+   </script>
+</body>
+
+</html>
