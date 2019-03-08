@@ -1853,19 +1853,16 @@ html {
    text-align: center;
 }
 
-.navbar-item {
-   color: white;
+.menu-item {
    border-radius: 0px;
    border: none;
    padding: 10px 20px;
 }
 
-.navbar-item:hover {
+.menu-item:hover {
    border-bottom-right-radius: none;
    border-bottom-right-radius: none;
    background: none;
-   color: white;
-   border-bottom: 2px solid white;
    padding: 10px 20px 8px;
 }
  
@@ -1891,7 +1888,7 @@ html {
       margin-top: 15px;
    }
   
-   .navbar-item {
+   .menu-item {
       margin: 0;
       margin: 5px;
       float: right;
