@@ -1855,51 +1855,102 @@ html {
    padding: 10px 20px;
 }
 
-.menu-item:hover {
-   border-bottom-right-radius: none;
-   border-bottom-right-radius: none;
-   background: none;
-   padding: 10px 20px 8px;
-}
- 
  @media (min-width: 720px) {
+    .navbar {
+       background: var(--primary);
+       box-sizing: content-box;
+    }
+
    .navbar .navbar-content {
-      display: flex;
-      padding: 10px 15px;
-      align-items: center;
+      padding: 0px 15px;
+      position: relative;
    }
 
    .navbar * {
       margin: 0;
    }
-  
-   .navbar-left  {
+
+   .navbar-left {
       justify-self: flex-start;
-      width: 25%;
+      width: 20%;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 10px 0px;
    }
   
    .navbar-right {
-      width: 75%;
-      justify-self: flex-end;
+      display: inline-block;
+      height: 100%;
+      width: 60%;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      vertical-align: middle;
    }
 
    .menu {
       list-style: none;
-      display: flex;
-      justify-content: flex-end;
       margin: 0;
       color: inherit;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
    }
   
    .menu-item {
       margin: 0;
-      margin: 5px;
+      display: inline-block;
+      height: 100%;
    }
 
    .menu-item a {
       color: inherit;
       box-shadow: none;
+      display: inline-block;
+      padding: 0px;
+      padding-top: 21.6px;
+      height: calc(100% - 21.6px);
    }
+
+   .menu-item .menu {
+      display: none;
+   }
+
+   .menu-item:hover .menu {
+      display: block;
+      position: absolute;
+      background: var(--dark-gray);
+      text-align: left;
+      height: auto;
+   }
+
+   .menu-item:hover .menu-item {
+      cursor: pointer;
+      display: block;
+      height: auto;
+   }
+
+   .menu-item:hover .menu-item a {
+      display: block;
+      padding: 0;
+      height: auto;
+   }
+
+   .menu-item:hover .menu-item .menu {
+      display: none;
+   }
+
+   .menu-item:hover .menu-item:hover .menu {
+      display: block;
+      left: 100%;
+      top: calc(100% - 37px);
+   }
+
+   .menu-item:hover .menu-item:hover .menu .menu-item {
+      display: block;
+   }
+
  }
 
  /* Display & Positioning Modifiers
