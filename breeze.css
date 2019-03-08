@@ -21,7 +21,7 @@
 }
 
 .bg-primary {
-   background: var(--primary);
+   background: #00c6e0;
    color: white;
 }
 
@@ -1839,10 +1839,6 @@ html {
    padding: 10px 15px;
 }
 
-.navbar h1 {
-   margin: 0;
-}
-
 .navbar-left  {
    text-align: center;
    width: 100%;
@@ -1872,31 +1868,37 @@ html {
       padding: 10px 15px;
       align-items: center;
    }
+
+   .navbar * {
+      margin: 0;
+   }
   
    .navbar-left  {
       justify-self: flex-start;
       width: 25%;
    }
   
-   .navbar-left > * {
-      margin: 0;
-   }
-  
    .navbar-right {
       width: 75%;
-      float: right !important;
-      margin-top: 15px;
+      justify-self: flex-end;
+   }
+
+   .menu {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      color: inherit;
    }
   
    .menu-item {
       margin: 0;
       margin: 5px;
-      float: right;
    }
 
-   .navbar .input-element {
-      margin: 0;
-      margin-top: 5px;
+   .menu-item a {
+      color: inherit;
+      box-shadow: none;
    }
  }
 
