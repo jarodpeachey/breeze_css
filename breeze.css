@@ -1981,6 +1981,23 @@ html {
       background: var(--lighter-gray);
    }
 
+   /* Transparent navbar */
+   .navbar.transparent {
+      background: transparent;
+   }
+
+   .navbar.transparent .menu-item:hover .menu {
+      background: #363636d2;
+   }
+
+   .navbar.transparent .menu-item:hover .menu .menu-item:hover {
+      background: #333333f5;
+   }
+
+   .navbar.transparent .menu-item:hover a {
+      color: white;
+   }
+
    /* Menu hover variants */
    .menu.underline > .menu-item:hover > a {
       border-bottom: 2px solid white;
@@ -1998,13 +2015,25 @@ html {
 
    .navbar .menu.underline .menu-item:hover .menu {
       border-top: none !important;
-      margin-top: 2px;
    }
 
    .navbar .menu.underline > .menu-item:hover > .menu {
       border-top: none !important;
       margin-top: -6px;
    }
+
+   #hero {
+      background: linear-gradient(
+         rgba(0, 0, 0, 0.3),
+         rgba(0, 0, 0, 0.3)
+      ), url('showcase4.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+   }
+
+
  }
 
  /* Display & Positioning Modifiers
