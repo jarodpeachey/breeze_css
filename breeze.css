@@ -1856,7 +1856,12 @@ html {
 }
 
 .menu-item:hover {
-   border-top: 2px solid white;
+   border-top: 4px solid white;
+}
+
+.menu-item:hover a {
+   position: relative;
+   top: -2px;
 }
 
  @media (min-width: 720px) {
