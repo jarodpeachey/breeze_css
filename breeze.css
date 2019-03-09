@@ -1855,14 +1855,8 @@ html {
    padding: 0 20px;
 }
 
-.menu-item:hover {
-   border-top: 4px solid white;
-   cursor: pointer;
-}
-
 .menu-item:hover a {
    position: relative;
-   top: -2px;
 }
 
  @media (min-width: 720px) {
@@ -1884,36 +1878,39 @@ html {
 
    .navbar-left {
       justify-self: flex-start;
-      width: 20%;
+      width: 25%;
       display: inline-block;
       vertical-align: middle;
       padding: 10px 0px;
    }
   
    .navbar-right {
-      display: inline-block;
-      height: 100%;
-      width: 60%;
-      padding: 0;
+      display: inline-flex;
+      justify-content: flex-end;
       position: absolute;
-      right: 0;
-      vertical-align: middle;
+      height: 100%;
+      padding: 0;
+      width: 70%;
+      margin-left: 5%;
+      align-items: center;
    }
 
    .menu {
       list-style: none;
       margin: 0;
       color: inherit;
-      height: 100%;
-      display: flex;
+      display: inline-block;
+      position: relative;
       justify-content: flex-end;
       align-items: center;
+      height: 100%;
    }
   
    .menu-item {
-      margin: 0;
-      display: inline-block;
-      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      padding: 0;
+      height: 100% !important;
       position: relative;
    }
 
@@ -1921,9 +1918,7 @@ html {
       color: inherit;
       box-shadow: none;
       display: inline-block;
-      padding: 0px;
-      padding-top: 21.6px;
-      height: calc(100% - 21.6px);
+      padding: 0 17.5px;
    }
 
    .menu-item a:hover {
@@ -1939,11 +1934,11 @@ html {
       position: absolute;
       background: var(--dark-gray);
       text-align: left;
-      width: 100%;
+      width: 225px;
       left: 0;
-      right: 0;
+      top: 100%;
       height: auto;
-      margin-top: -2px;
+      border-top: 2px solid #636363;
    }
 
    .menu-item:hover .menu-item {
@@ -1953,6 +1948,11 @@ html {
       padding: 10px;
       position: relative;
       border: none;
+      cursor: pointer;
+   }
+
+   .menu-item:hover .menu-item:hover {
+      background: #636363;
    }
 
    .menu-item:hover .menu-item a {
@@ -1966,12 +1966,14 @@ html {
 
    .menu-item:hover .menu-item .menu {
       display: none;
+      width: auto;
    }
 
    .menu-item:hover .menu-item:hover .menu {
       display: block;
       left: 100%;
       top: 0;
+      border-top: none;
       height: auto;
    }
 
@@ -1982,6 +1984,7 @@ html {
       padding: 10px;
       position: relative;
       border: none;
+      cursor: pointer;
    }
 
    .menu-item:hover .menu-item:hover .menu .menu-item a {
