@@ -1856,7 +1856,7 @@ html {
 }
 
 .menu-item:hover {
-   background: var(--darkest-gray);
+   border-top: 2px solid white;
 }
 
  @media (min-width: 720px) {
@@ -1866,8 +1866,10 @@ html {
     }
 
    .navbar .navbar-content {
-      padding: 0px 15px;
       position: relative;
+      padding: 0px;
+      width: 85%;
+      margin: 0 auto;
    }
 
    .navbar * {
@@ -1935,6 +1937,7 @@ html {
       left: 0;
       right: 0;
       height: auto;
+      margin-top: -2px;
    }
 
    .menu-item:hover .menu-item {
@@ -1943,6 +1946,7 @@ html {
       height: auto;
       padding: 10px;
       position: relative;
+      border: none;
    }
 
    .menu-item:hover .menu-item a {
@@ -1971,6 +1975,7 @@ html {
       height: auto;
       padding: 10px;
       position: relative;
+      border: none;
    }
 
    .menu-item:hover .menu-item:hover .menu .menu-item a {
