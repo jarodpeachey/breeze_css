@@ -1833,6 +1833,9 @@ html {
  /* Navbar
  ---------------------------------------------------------------
  ---------------------------------------------------------------*/
+.navbar {
+   color: white;
+}
 
 .navbar .navbar-content {
    display: block;
@@ -1847,16 +1850,6 @@ html {
 .navbar-right {
    width: 100%;
    text-align: center;
-}
-
-.menu-item {
-   border-radius: 0px;
-   border: none;
-   padding: 0 20px;
-}
-
-.menu-item:hover a {
-   position: relative;
 }
 
  @media (min-width: 720px) {
@@ -1877,11 +1870,9 @@ html {
    }
 
    .navbar-left {
-      justify-self: flex-start;
       width: 25%;
       display: inline-block;
-      vertical-align: middle;
-      padding: 10px 0px;
+      padding: 15px 0px;
    }
   
    .navbar-right {
@@ -1890,35 +1881,34 @@ html {
       position: absolute;
       height: 100%;
       padding: 0;
-      width: 70%;
-      margin-left: 5%;
+      width: 75%;
       align-items: center;
    }
 
    .menu {
       list-style: none;
-      margin: 0;
-      color: inherit;
       display: inline-block;
-      position: relative;
       justify-content: flex-end;
-      align-items: center;
       height: 100%;
+      margin-right: 20px;
    }
   
    .menu-item {
       display: inline-flex;
       align-items: center;
-      padding: 0;
       height: 100% !important;
       position: relative;
+   }
+
+   .menu-item:hover > a {
+      color: var(--primary);
    }
 
    .menu-item a {
       color: inherit;
       box-shadow: none;
       display: inline-block;
-      padding: 0 17.5px;
+      padding: 0 15px;
    }
 
    .menu-item a:hover {
@@ -1929,7 +1919,7 @@ html {
       display: none;
    }
 
-   .menu-item:hover .menu {
+   .menu-item:hover > .menu {
       display: block;
       position: absolute;
       background: var(--dark-gray);
@@ -1939,45 +1929,33 @@ html {
       top: 100%;
       height: auto;
       border-top: 2px solid #636363;
+      z-index: 2;
    }
 
-   .menu-item:hover .menu-item {
-      margin: 0;
+   .menu-item:hover > .menu > .menu-item {
       display: block;
-      height: auto;
-      padding: 10px;
-      position: relative;
-      border: none;
+      padding: 10px 15px;
       cursor: pointer;
+   }
+
+   .menu-item:hover > .menu > .menu-item:hover > a {
+      color: inherit;
    }
 
    .menu-item:hover .menu-item:hover {
       background: #636363;
    }
 
-   .menu-item:hover .menu-item a {
-      color: inherit;
-      box-shadow: none;
-      display: block;
-      padding: 0px;
-      padding-top: 21.6px;
-      height: calc(100% - 21.6px);
-   }
-
-   .menu-item:hover .menu-item .menu {
-      display: none;
-      width: auto;
-   }
-
-   .menu-item:hover .menu-item:hover .menu {
+   .menu-item:hover > .menu > .menu-item:hover > .menu {
       display: block;
       left: 100%;
-      top: 0;
+      top: 0px;
       border-top: none;
       height: auto;
+      z-index: 3;
    }
 
-   .menu-item:hover .menu-item:hover .menu .menu-item {
+   .menu-item:hover > .menu > .menu-item:hover .menu-item {
       margin: 0;
       display: block;
       height: auto;
@@ -1985,12 +1963,47 @@ html {
       position: relative;
       border: none;
       cursor: pointer;
+      padding-right: 40px;
    }
 
-   .menu-item:hover .menu-item:hover .menu .menu-item a {
-      margin: 0;
-      padding: 0;
-      line-height: 2rem;
+   /* White navbars */
+   .navbar.white {
+      background: white;
+      color: var(--dark-gray) !important;
+   }
+
+   .navbar.white .menu-item:hover .menu {
+      background: white;
+      border-top: 2px solid var(--primary);
+   }
+
+   .navbar.white .menu-item:hover .menu .menu-item:hover {
+      background: var(--lighter-gray);
+   }
+
+   /* Menu hover variants */
+   .menu.underline > .menu-item:hover > a {
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+      transition: none;
+      color: inherit;
+   }
+
+   .navbar.white .menu.underline > .menu-item:hover > a {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 10px;
+      transition: none;
+      color: inherit;
+   }
+
+   .navbar .menu.underline .menu-item:hover .menu {
+      border-top: none !important;
+      margin-top: 2px;
+   }
+
+   .navbar .menu.underline > .menu-item:hover > .menu {
+      border-top: none !important;
+      margin-top: -6px;
    }
  }
 
