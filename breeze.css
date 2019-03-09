@@ -1852,12 +1852,16 @@ html {
 .menu-item {
    border-radius: 0px;
    border: none;
-   padding: 10px 20px;
+   padding: 0 20px;
+}
+
+.menu-item:hover {
+   background: var(--darkest-gray);
 }
 
  @media (min-width: 720px) {
     .navbar {
-       background: var(--primary);
+       background: var(--dark-gray);
        box-sizing: content-box;
     }
 
@@ -1902,6 +1906,7 @@ html {
       margin: 0;
       display: inline-block;
       height: 100%;
+      position: relative;
    }
 
    .menu-item a {
@@ -1913,6 +1918,10 @@ html {
       height: calc(100% - 21.6px);
    }
 
+   .menu-item a:hover {
+      line-height: 1.4rem;
+   }
+
    .menu-item .menu {
       display: none;
    }
@@ -1922,19 +1931,27 @@ html {
       position: absolute;
       background: var(--dark-gray);
       text-align: left;
+      width: 100%;
+      left: 0;
+      right: 0;
       height: auto;
    }
 
    .menu-item:hover .menu-item {
-      cursor: pointer;
+      margin: 0;
       display: block;
       height: auto;
+      padding: 10px;
+      position: relative;
    }
 
    .menu-item:hover .menu-item a {
+      color: inherit;
+      box-shadow: none;
       display: block;
-      padding: 0;
-      height: auto;
+      padding: 0px;
+      padding-top: 21.6px;
+      height: calc(100% - 21.6px);
    }
 
    .menu-item:hover .menu-item .menu {
@@ -1944,13 +1961,23 @@ html {
    .menu-item:hover .menu-item:hover .menu {
       display: block;
       left: 100%;
-      top: calc(100% - 37px);
+      top: 0;
+      height: auto;
    }
 
    .menu-item:hover .menu-item:hover .menu .menu-item {
+      margin: 0;
       display: block;
+      height: auto;
+      padding: 10px;
+      position: relative;
    }
 
+   .menu-item:hover .menu-item:hover .menu .menu-item a {
+      margin: 0;
+      padding: 0;
+      line-height: 2rem;
+   }
  }
 
  /* Display & Positioning Modifiers
