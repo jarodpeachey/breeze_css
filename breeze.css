@@ -740,6 +740,7 @@ html {
     cursor: pointer;
     transition-duration: .2s;
     background: var(--lightest-gray);
+    box-shadow: none;
  }
  
  button.small,
@@ -751,9 +752,13 @@ html {
     font-size: 1.3rem;
  }
 
- button.medium {
+ button.medium,
+ .button.medium,
+ input[type="submit"].medium,
+ input[type="reset"].medium,
+ input[type="button"].medium {
     padding: 13px 30px;
-    font-size: 1.6rem
+    font-size: 1.6rem;
  }
  
  button.large,
