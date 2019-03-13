@@ -1907,7 +1907,8 @@ html {
    }
 
    .menu-item a:hover {
-      line-height: 1.4rem;
+      color: var(--primary);
+      cursor: pointer;
    }
 
    .menu-item .menu {
