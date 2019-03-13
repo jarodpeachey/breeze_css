@@ -685,24 +685,10 @@ html {
     color: var(--link-dark);
     display: inline-block;
     font-weight: 500;
-    line-height: 1.4rem;
  }
  
  a:hover, a.hover { 
-    line-height: 1.5rem;
-    transition-duration: .5s;
-    box-shadow: 0px 2px 0px 0px var(--link-dark);
- }
- 
- a:hover:visited {
-    box-shadow: 0px 2px 0px 0px #3910cc;
- }
- 
- a:visited, a.visited { color: #3910cc; }
- 
- a:active, a.active {
-    color: #003ec5;
-    box-shadow: 0px 2px 0px 0px #003ec5;
+    border-bottom: 2px var(--primary);
  }
  
  
@@ -729,6 +715,10 @@ html {
     margin-right: 10px;
     text-align: center;
     text-transform: uppercase;
+ }
+
+ button a {
+    color: white;
  }
  
  button:hover,
@@ -792,7 +782,7 @@ html {
  input[type="reset"].primary,
  input[type="button"].primary {
     background: var(--primary);
-    color: white;
+    color: white !important;
     border-color: var(--primary);
  }
  
@@ -802,7 +792,7 @@ html {
  input[type="reset"].primary:hover,
  input[type="button"].primary:hover {
     background: var(--primary-dark);
-    color: white;
+    color: white !important;
     border-color: var(--primary-dark);
  }
  
@@ -812,7 +802,7 @@ html {
  input[type="reset"].accent,
  input[type="button"].accent {
     background: var(--accent);
-    color: white;
+    color: white !important;
     border-color: var(--accent);
  }
  
@@ -822,7 +812,7 @@ html {
  input[type="reset"].accent:hover,
  input[type="button"].accent:hover {
     background: var(--accent-dark);
-    color: white;
+    color: white !important;
     border-color: var(--accent-dark);
  }
  
@@ -832,7 +822,7 @@ html {
  input[type="reset"].link,
  input[type="button"].link {
     background: var(--link);
-    color: white;
+    color: white !important;
     border-color: var(--link);
  }
  
@@ -842,7 +832,7 @@ html {
  input[type="reset"].link:hover,
  input[type="button"].link:hover {
     background: var(--link-dark);
-    color: white;
+    color: white !important;
     border-color: var(--link-dark);
  }
  
@@ -852,7 +842,7 @@ html {
  input[type="reset"].info,
  input[type="button"].info {
     background: var(--info);
-    color: white;
+    color: white !important;
     border-color: var(--info);
  }
  
@@ -862,7 +852,7 @@ html {
  input[type="reset"].info:hover,
  input[type="button"].info:hover {
     background: var(--info-dark);
-    color: white;
+    color: white !important;
     border-color: var(--info-dark);
  }
  
@@ -872,7 +862,7 @@ html {
  input[type="reset"].success,
  input[type="button"].success {
     background: var(--success);
-    color: white;
+    color: white !important;
     border-color: var(--success);
  }
  
@@ -882,7 +872,7 @@ html {
  input[type="reset"].success:hover,
  input[type="button"].success:hover {
     background: var(--success-dark);
-    color: white;
+    color: white !important;
     border-color: var(--success-dark);
  }
  
@@ -921,7 +911,7 @@ html {
  input[type="reset"].danger:hover,
  input[type="button"].danger:hover {
     background: var(--danger-dark);
-    color: white;
+    color: white !important;
     border-color: var(--danger-dark);
  }
  
@@ -950,7 +940,7 @@ html {
  input[type="reset"].dark,
  input[type="button"].dark {
     background: var(--dark-gray);
-    color: white;
+    color: white !important;
     border-color: var(--dark-gray);
  }
  
@@ -978,7 +968,7 @@ html {
  input[type="submit"].primary.outline:hover,
  input[type="reset"].primary.outline:hover,
  input[type="button"].primary.outline:hover {
-    color: white;
+    color: white !important;
     background: var(--primary);
  }
  
@@ -997,7 +987,7 @@ html {
  input[type="submit"].accent.outline:hover,
  input[type="reset"].accent.outline:hover,
  input[type="button"].accent.outline:hover {
-    color: white;
+    color: white !important;
     background: var(--accent);
  }
  
@@ -1016,7 +1006,7 @@ html {
  input[type="submit"].link.outline:hover,
  input[type="reset"].link.outline:hover,
  input[type="button"].link.outline:hover {
-    color: white;
+    color: white !important;
     background: var(--link);
  }
  
@@ -1035,7 +1025,7 @@ html {
  input[type="submit"].info.outline:hover,
  input[type="reset"].info.outline:hover,
  input[type="button"].info.outline:hover {
-    color: white;
+    color: white !important;
     background: var(--info);
  }
  
@@ -1054,7 +1044,7 @@ html {
  input[type="submit"].success.outline:hover,
  input[type="reset"].success.outline:hover,
  input[type="button"].success.outline:hover {
-    color: white;
+    color: white !important;
     background: var(--success);
  }
  
@@ -2260,6 +2250,10 @@ html {
  
  .full-width {
     width: 100%;
+ }
+
+ .full-height {
+    height: 100%;
  }
  
  .float-right {
