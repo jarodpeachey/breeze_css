@@ -731,6 +731,7 @@ html {
     transition-duration: .2s;
     background: var(--lightest-gray);
     box-shadow: none;
+    border: 1px solid var(--medium-gray);
  }
  
  button.small,
