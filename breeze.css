@@ -146,6 +146,7 @@ html {
    display: flex;
    flex-wrap: wrap;
    width: 100%;
+   margin: 0 -8px 0 -8px;
 }
 
 .row.mobile .col-1, .row.mobile .mobile-col-1 { width: 8.33333%; flex: none; }
@@ -170,6 +171,7 @@ html {
    .row.mobile-lg {
       display: flex;
       flex-wrap: wrap;
+      margin: 0 -8px 0 -8px;
    }
 
    .row.mobile-lg .auto, .mobile-auto {
@@ -230,6 +232,7 @@ html {
    .row.tablet, .row {
       display: flex;
       flex-wrap: wrap;
+      margin: 0 -8px 0 -8px;
    }
 
    .row .col-1 { width: 8.33333%; flex: none; }
@@ -304,6 +307,7 @@ html {
    .row.desktop {
       display: flex;
       flex-wrap: wrap;
+      margin: 0 -8px 0 -8px;
    }
 
    .row.desktop .col {
@@ -385,6 +389,7 @@ html {
    .row.widescreen {
       display: flex;
       flex-wrap: wrap;
+      margin: 0 -8px 0 -8px;
    }
 
    .row.widescreen .col {
@@ -563,13 +568,6 @@ html {
    .widescreen-offset-12 { margin-left: 100% !important; }
    .row.widescreen .offset-none, .widescreen-offset-none { margin: 0 !important; }
 }
-
-.row {
-   margin: 0px;
-   padding: 0px;
-   margin-left: -8px;
-   margin-right: -8px;
-}
  
  /* TYPOGRAPHY
  ---------------------------------------------------------------
@@ -685,10 +683,24 @@ html {
     color: var(--link-dark);
     display: inline-block;
     font-weight: 500;
+    line-height: 1.4rem;
  }
  
  a:hover, a.hover { 
-    border-bottom: 2px var(--primary);
+    line-height: 1.5rem;
+    transition-duration: .5s;
+    box-shadow: 0px 2px 0px 0px var(--link-dark);
+ }
+ 
+ a:hover:visited {
+    box-shadow: 0px 2px 0px 0px #3910cc;
+ }
+ 
+ a:visited, a.visited { color: #3910cc; }
+ 
+ a:active, a.active {
+    color: #003ec5;
+    box-shadow: 0px 2px 0px 0px #003ec5;
  }
  
  
@@ -716,10 +728,6 @@ html {
     text-align: center;
     text-transform: uppercase;
  }
-
- button a {
-    color: white;
- }
  
  button:hover,
  .button:hover,
@@ -730,8 +738,6 @@ html {
     cursor: pointer;
     transition-duration: .2s;
     background: var(--lightest-gray);
-    box-shadow: none;
-    border: 1px solid var(--medium-gray);
  }
  
  button.small,
@@ -743,13 +749,9 @@ html {
     font-size: 1.3rem;
  }
 
- button.medium,
- .button.medium,
- input[type="submit"].medium,
- input[type="reset"].medium,
- input[type="button"].medium {
+ button.medium {
     padding: 13px 30px;
-    font-size: 1.6rem;
+    font-size: 1.6rem
  }
  
  button.large,
@@ -783,7 +785,7 @@ html {
  input[type="reset"].primary,
  input[type="button"].primary {
     background: var(--primary);
-    color: white !important;
+    color: white;
     border-color: var(--primary);
  }
  
@@ -793,7 +795,7 @@ html {
  input[type="reset"].primary:hover,
  input[type="button"].primary:hover {
     background: var(--primary-dark);
-    color: white !important;
+    color: white;
     border-color: var(--primary-dark);
  }
  
@@ -803,7 +805,7 @@ html {
  input[type="reset"].accent,
  input[type="button"].accent {
     background: var(--accent);
-    color: white !important;
+    color: white;
     border-color: var(--accent);
  }
  
@@ -813,7 +815,7 @@ html {
  input[type="reset"].accent:hover,
  input[type="button"].accent:hover {
     background: var(--accent-dark);
-    color: white !important;
+    color: white;
     border-color: var(--accent-dark);
  }
  
@@ -823,7 +825,7 @@ html {
  input[type="reset"].link,
  input[type="button"].link {
     background: var(--link);
-    color: white !important;
+    color: white;
     border-color: var(--link);
  }
  
@@ -833,7 +835,7 @@ html {
  input[type="reset"].link:hover,
  input[type="button"].link:hover {
     background: var(--link-dark);
-    color: white !important;
+    color: white;
     border-color: var(--link-dark);
  }
  
@@ -843,7 +845,7 @@ html {
  input[type="reset"].info,
  input[type="button"].info {
     background: var(--info);
-    color: white !important;
+    color: white;
     border-color: var(--info);
  }
  
@@ -853,7 +855,7 @@ html {
  input[type="reset"].info:hover,
  input[type="button"].info:hover {
     background: var(--info-dark);
-    color: white !important;
+    color: white;
     border-color: var(--info-dark);
  }
  
@@ -863,7 +865,7 @@ html {
  input[type="reset"].success,
  input[type="button"].success {
     background: var(--success);
-    color: white !important;
+    color: white;
     border-color: var(--success);
  }
  
@@ -873,7 +875,7 @@ html {
  input[type="reset"].success:hover,
  input[type="button"].success:hover {
     background: var(--success-dark);
-    color: white !important;
+    color: white;
     border-color: var(--success-dark);
  }
  
@@ -912,7 +914,7 @@ html {
  input[type="reset"].danger:hover,
  input[type="button"].danger:hover {
     background: var(--danger-dark);
-    color: white !important;
+    color: white;
     border-color: var(--danger-dark);
  }
  
@@ -941,7 +943,7 @@ html {
  input[type="reset"].dark,
  input[type="button"].dark {
     background: var(--dark-gray);
-    color: white !important;
+    color: white;
     border-color: var(--dark-gray);
  }
  
@@ -969,7 +971,7 @@ html {
  input[type="submit"].primary.outline:hover,
  input[type="reset"].primary.outline:hover,
  input[type="button"].primary.outline:hover {
-    color: white !important;
+    color: white;
     background: var(--primary);
  }
  
@@ -988,7 +990,7 @@ html {
  input[type="submit"].accent.outline:hover,
  input[type="reset"].accent.outline:hover,
  input[type="button"].accent.outline:hover {
-    color: white !important;
+    color: white;
     background: var(--accent);
  }
  
@@ -1007,7 +1009,7 @@ html {
  input[type="submit"].link.outline:hover,
  input[type="reset"].link.outline:hover,
  input[type="button"].link.outline:hover {
-    color: white !important;
+    color: white;
     background: var(--link);
  }
  
@@ -1026,7 +1028,7 @@ html {
  input[type="submit"].info.outline:hover,
  input[type="reset"].info.outline:hover,
  input[type="button"].info.outline:hover {
-    color: white !important;
+    color: white;
     background: var(--info);
  }
  
@@ -1045,7 +1047,7 @@ html {
  input[type="submit"].success.outline:hover,
  input[type="reset"].success.outline:hover,
  input[type="button"].success.outline:hover {
-    color: white !important;
+    color: white;
     background: var(--success);
  }
  
@@ -1908,8 +1910,7 @@ html {
    }
 
    .menu-item a:hover {
-      color: var(--primary);
-      cursor: pointer;
+      line-height: 1.4rem;
    }
 
    .menu-item .menu {
@@ -2252,10 +2253,6 @@ html {
  
  .full-width {
     width: 100%;
- }
-
- .full-height {
-    height: 100%;
  }
  
  .float-right {
@@ -3421,4 +3418,3 @@ html {
     .widescreen-pl-9 { padding-left: 9rem !important; }
     .widescreen-pl-10 { padding-left: 10rem !important; }
  }
- 
