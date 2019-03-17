@@ -2586,6 +2586,49 @@ html {
    .widescreen-left-20 { left: 10rem; }
  }
 
+ @media (min-width: 540px) {
+    .hidden-above-mobile-lg {
+       display: none;
+    }
+ }
+
+ @media (min-width: 769px) {
+   .hidden-above-tablet {
+      display: none;
+   }
+ }
+
+ @media (min-width: 1024px) {
+   .hidden-above-desktop {
+      display: none;
+   }
+}
+
+@media (max-width: 1219px){
+   .hidden-below-widescreen {
+      display: none;
+   }
+}
+
+@media (max-width: 1023px){
+   .hidden-below-desktop {
+      display: none;
+   }
+}
+
+@media (max-width: 768px){
+   .hidden-below-tablet {
+      display: none;
+   }
+}
+
+@media (max-width: 540px){
+   .hidden-below-mobile-lg {
+      display: none;
+   }
+}
+
+
  
  
  /* Layout Modifiers
