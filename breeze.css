@@ -1616,35 +1616,6 @@ html {
     font-family: 'Raleway';
  }
  
- /* IMAGES
- --------------------------------------------------------------
- --------------------------------------------------------------*/
- 
- .image {
-    max-width: 100%;
- }
- 
- .image img {
-    width: 100%;
- }
- 
- .image .caption {
-    font-size: 1.2rem;
-    padding: 10px 0px;
- }
- 
- .image .caption.dark {
-    background: var(--medium-gray);
-    padding: 10px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
- }
- 
- section.secondary .caption {
-    background: transparent;
- }
- 
- 
  
  /* Lists
  ---------------------------------------------------------------
@@ -2628,9 +2599,6 @@ html {
    }
 }
 
-
- 
- 
  /* Layout Modifiers
  ---------------------------------------------------------------
  ---------------------------------------------------------------*/
@@ -2655,15 +2623,15 @@ html {
     float: left;
  }
  
- .mobile-center-text, .center-text {
+ .center-text {
     text-align: center !important;
  }
  
- .mobile-align-text-left, .align-text-left {
+ .align-text-left {
     text-align: left !important;
  }
  
- .mobile-align-text-right, .align-text-right {
+ .align-text-right {
     text-align: right !important;
  }
  
