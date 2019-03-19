@@ -1829,11 +1829,12 @@ html {
  ---------------------------------------------------------------*/
 
 .navbar-content {
-   padding: 20px;
+   padding: 15px;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding-bottom: 0;
+   background: white;
+   color: var(--dark-gray);
 }
 
 .navbar-left {
@@ -1884,7 +1885,7 @@ html {
 .menu > .menu-item:hover > .menu {
    display: block;
    position: absolute;
-   top: 100%;
+   top: 62px;
    min-width: 175px;
    width: auto;
    background: #f1f1f1;
@@ -1898,15 +1899,31 @@ html {
 
 .menu > .menu-item.with-menu:hover::after {
    content: '';
+   position: absolute;
+   display: block;
+   background: transparent;
+   width: 120px;
+   height: 35px;
+   right: calc(50% - 60px);
+   top: 30px;
+}
+
+.menu > .menu-item.with-menu:hover::before {
+   content: '';
    display: block;
    background: #f1f1f1;
-   width: 12px;
-   height: 12px;
+   width: 14px;
+   height: 14px;
    transform: rotate(45deg);
    position: absolute;
-   bottom: -6px;
-   right: calc(50% - 6px);
-   z-index: -1;
+   top: calc(62px - 7px);
+   right: calc(50% - 7px);
+   z-index: 0;
+}
+
+.menu > .menu-item:hover > .menu > .menu-item a {
+   background: transparent;
+   color: var(--dark-gray) !important;
 }
 
 .menu > .menu-item:hover > .menu > .menu-item:hover a {
@@ -1917,17 +1934,44 @@ html {
 .menu > .menu-item:hover > .menu.full-width {
    position: fixed;
    z-index: 500;
-   width: calc(100vw - 20px) !important;
-   top: 68px;
+   width: calc(100vw - 17px) !important;
+   top: 78px;
    left: 0;
 }
 
 .menu > .menu-item:hover > .menu.left.full-width {
    position: absolute;
-   width: calc(100vw - 20px) !important;
-   margin-right: -19px;
+   width: calc(100vw - 17px) !important;
+   margin-right: -15px;
    right: 0;
    left: auto;
+   top: 62px;
+}
+
+/* Transparent navbars */
+nav.transparent {
+   color: white;
+}
+
+nav.transparent .menu-item:hover a {
+   color: var(--white-transparent) !important;
+}
+
+nav.transparent .menu > .menu-item:hover > .menu {
+   background: white;
+}
+
+nav.transparent .menu > .menu-item.with-menu:hover::before {
+   background: white;
+   content: '';
+   display: block;
+   width: 14px;
+   height: 14px;
+   transform: rotate(45deg);
+   position: absolute;
+   top: calc(62px - 7px);
+   right: calc(50% - 7px);
+   z-index: -1;
 }
 
  /* Display & Positioning Modifiers
