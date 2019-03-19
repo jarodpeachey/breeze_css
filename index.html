@@ -21,9 +21,9 @@
             </div>
             <div class="navbar-right">
                <ul class="menu">
-                  <li class="menu-item">
+                  <li class="menu-item with-menu">
                      <a href="#">Home</a>
-                     <ul class="menu">
+                     <ul class="menu full-width">
                         <li class="menu-item">
                            <a href="#">Homepage</a>
                         </li>
@@ -35,9 +35,9 @@
                   <li class="menu-item">
                      <a href="#">About</a>
                   </li>
-                  <li class="menu-item">
+                  <li class="menu-item with-menu">
                      <a href="#">Contact</a>
-                     <ul class="menu left">
+                     <ul class="menu left full-width">
                         <li class="menu-item">
                            <a href="#">Phone</a>
                         </li>
@@ -68,11 +68,35 @@
    <section id="grid" class="section">
       <div class="container">
          <h2>Grid system</h2>
+         <div class="row mobile">
+            <div class="col"><div class="demo">Mobile</div></div>
+            <div class="col"><div class="demo">Mobile</div></div>
+            <div class="col"><div class="demo">Mobile</div></div>
+            <div class="col"><div class="demo">Mobile</div></div>
+         </div>
+         <div class="row mobile-lg">
+            <div class="col"><div class="demo">Mobile-LG</div></div>
+            <div class="col"><div class="demo">Mobile-LG</div></div>
+            <div class="col"><div class="demo">Mobile-LG</div></div>
+            <div class="col"><div class="demo">Mobile-LG</div></div>
+         </div>
+         <div class="row tablet">
+            <div class="col"><div class="demo">Tablet</div></div>
+            <div class="col"><div class="demo">Tablet</div></div>
+            <div class="col"><div class="demo">Tablet</div></div>
+            <div class="col"><div class="demo">Tablet</div></div>
+         </div>
          <div class="row desktop">
-            <div class="col col-6 mobile-lg-col-1"><div class="demo">Auto</div></div>
-            <div class="col col-6 mobile-lg-col-1"><div class="demo">Auto</div></div>
-            <div class="col col-6 mobile-lg-col-1"><div class="demo">Auto</div></div>
-            <div class="col col-6 mobile-lg-col-1"><div class="demo">Auto</div></div>
+            <div class="col"><div class="demo">Desktop</div></div>
+            <div class="col"><div class="demo">Desktop</div></div>
+            <div class="col"><div class="demo">Desktop</div></div>
+            <div class="col"><div class="demo">Desktop</div></div>
+         </div>
+         <div class="row widescreen">
+            <div class="col"><div class="demo">Widescreen</div></div>
+            <div class="col"><div class="demo">Widescreen</div></div>
+            <div class="col"><div class="demo">Widescreen</div></div>
+            <div class="col"><div class="demo">Widescreen</div></div>
          </div>
          <p>*NOTE: <code>offset-(value)</code> becomes active from tablet up. If you have a row with a class of <code>mobile</code>,
             use the <code>mobile-offset-(value)</code> class to add offset below tablet.</p>
@@ -346,7 +370,7 @@
       </div>
    </section>
 
-   <section class="clear-float">
+   <section>
       <div class="container">
          <h3>Lists</h3>
          <p>Lists are given basic styles to make them easy to read and understand. Both unordered lists and ordered
@@ -463,45 +487,7 @@
          </table>
       </div>
    </section>
-   <section class="secondary">
-      <div class="container">
-         <h3 class="mt-0">Links</h3>
-         <p>Breeze CSS offers base styling for all links and link states, such as <a href="#">link</a>, <a href="#">hover</a>,
-            <a href="#">active</a> and <a href="#">visited</a>.</p>
-      </div>
-   </section>
-   <section>
-      <div class="container">
-         <div class="row mobile">
-            <div class="center-text col-4 offset-2">
-               <div>
-                  <img src="../Pet Finder App/petfinder_logo.png" alt="" class="full-width">
-                  <h4 class="title">Ease of Use</h4>
-                  <p>Breze makes it easy to create a responsive, mobile-first website design using only HTML. </p>
-               </div>
-            </div>
-            <div class="center-text col-4 offset-2">
-               <div>
-                  <img src="../Pet Finder App/petfinder_logo.png" alt="" class="full-width">
-                  <h4 class="title">Support</h4>
-                  <p>With a massive community of support, you can rest assured that any problem you come accross can be
-                     solved. </p>
-               </div>
-            </div>
-            <div class="center-text col-4 offset-2">
-               <div>
-                  <img src="../Pet Finder App/petfinder_logo.png" alt="" class="full-width">
-                  <h4 class="title">Open Source</h4>
-                  <p>Because Breeze is open-source, any problem that is found by you, the community, is promptly
-                     resolved as fast as possible. </p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <script src="breeze.js">
-      formVal
-   </script>
+   <script src="breeze.js"></script>
 </body>
 
 </html>
