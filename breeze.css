@@ -2805,9 +2805,6 @@ html {
  .ml-9, .mobile-ml-9 { margin-left: 9rem !important; }
  .ml-10, .mobile-ml-10 { margin-left: 10rem !important; }
  
- .p-auto, .mobile-p-auto {
-    padding: 0 auto !important; }
- 
  .p-0, .mobile-p-0 { padding: 0 !important; }
  .p-1, .mobile-p-1 { padding: 1rem !important; }
  .p-2, .mobile-p-2 { padding: 2rem !important; }
