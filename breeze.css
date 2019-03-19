@@ -1858,12 +1858,26 @@ html {
    min-width: 175px;
    width: auto;
    background: #f7f7f7;
-   right: 0;
+   left: 0;
+}
+
+.menu > .menu-item:hover > .menu.left {
+   right: 0 !important;
+   left: auto;
+}
+
+.menu > .menu-item:hover > .menu::before {
+   content: '';
+   display: block;
+   background: black;
+   width: 10px;
+   height: 10px;
 }
 
 .menu > .menu-item:hover > .menu > .menu-item:hover {
    background: #ebebeb;
 }
+
 
  /* Display & Positioning Modifiers
  ---------------------------------------------------------------
