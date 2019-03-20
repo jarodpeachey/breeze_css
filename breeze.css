@@ -739,7 +739,9 @@ html {
  input[type="reset"],
  input[type="button"] {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 11px 20px;
+    position: relative;
+    top: .8px;
     border: 1px solid var(--medium-gray);
     background: transparent;
     color: var(--dark-gray);
@@ -1271,7 +1273,7 @@ html {
  
  input[type="email"], input[type="number"], input[type="search"], input[type="text"], 
  input[type="tel"], input[type="url"], input[type="password"], textarea, select {
-    padding: 10.8px 10px;
+    padding: 12px 12px;
     border: 1px solid var(--medium-gray);
     border-radius: 4px;
     display: block;
@@ -1374,268 +1376,12 @@ html {
     }
  }
  
- .input-element.inline {
-    margin: 3rem 0;
-    display: block;
- }
- 
- .input-element.inline * {
-    margin-bottom: 1rem;
-    display: block;
-    width: 100%;
- }
- 
- label, .input-element.inline label {
-    display: block;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    font-size: 1.5rem;
- }
- 
- .input-element.inline.mobile {
-    display: flex;
-    align-items: center;
- }
- 
- .input-element.inline.mobile > * {
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-    margin: 0;
-    margin-left: 8px;
- }
- 
- .input-element.inline.mobile label {
-    margin-right: 1.2rem;
-    margin-left: 0;
-    justify-self: flex-start;
-    max-width: 100px;
- }
- 
- .input-element.inline button,
- .input-element.inline.mobile button, .input-element.inline.mobile .button, .input-element.inline.tablet button, .input-element.inline.tablet .button,
- .input-element.inline.mobile-lg button, .input-element.inline.mobile-lg .button
- .input-element.inline.desktop button, .input-element.inline.desktop .button, .input-element.inline.widescreen button, .input-element.inline.widescreen .button {
-    flex: none;
- }
- 
- @media (max-width: 768px){
-    .input-element.inline input {
-       width: 100%;
-    }
- }
- 
- @media (min-width: 540px) {
-    .input-element.inline.mobile-lg {
-       display: flex;
-       align-items: center;
-    }
-    
-    .input-element.inline.mobile-lg > * {
-       flex-basis: 0;
-       flex-grow: 1;
-       flex-shrink: 1;
-       margin: 0;
-       margin-left: 8px;
-    }
- 
-    .input-element.inline.mobile-lg label  {
-       margin-right: 1.2rem;
-       margin-left: 0;
-       justify-self: flex-start;
-       max-width: 100px;
-    }
- }
- 
- @media (min-width: 769px) {
-    .input-element.inline.desktop, .input-element.inline.widescreen {
-       display: block;
-    }
- 
-    .input-element.inline.desktop input, .input-element.inline.widescreen input {
-       width: 100%;
-    }
- 
-    .input-element.inline.desktop label, .input-element.inline.widescreen label {
-       display: inline-block;
-       margin-bottom: 1rem;
-    }
- 
-    .input-element.inline.tablet, .input-element.inline {
-       display: flex;
-       align-items: center;
-    }
-
-    .input-element.inline * {
-      margin-bottom: 1rem;
-      display: block;
-      width: auto;
-   }
-    
-    .input-element.inline.tablet > *, .input-element.inline > * {
-       flex-basis: 0;
-       flex-grow: 1;
-       flex-shrink: 1;
-       margin: 0;
-       margin-left: 8px;
-    }
-    
-    .input-element.inline.tablet label, .input-element.inline label {
-       margin-right: 1.2rem;
-       margin-left: 0;
-       justify-self: flex-start;
-       max-width: 100px;
-    }
- }
- 
- @media (min-width: 1024px) {
-    .input-element.inline.desktop {
-       display: flex;
-       align-items: center;
-    }
-    
-    .input-element.inline.desktop > * {
-       flex-basis: 0;
-       flex-grow: 1;
-       flex-shrink: 1;
-       margin: 0;
-       margin-left: 8px;
-    }
-    
-    .input-element.inline.desktop label{
-       margin-right: 1.2rem;
-       margin-left: 0;
-       justify-self: flex-start;
-       max-width: 100px;
-    }
- }
- 
- @media (min-width: 1220px) {
-    .input-element.inline.widescreen {
-       display: flex;
-       align-items: center;
-    }
-    
-    .input-element.inline.widescreen > * {
-       flex-basis: 0;
-       flex-grow: 1;
-       flex-shrink: 1;
-       margin: 0;
-       margin-left: 8px;
-    }
-    
-    .input-element.inline.widescreen label {
-       margin-right: 1.2rem;
-       margin-left: 0;
-       justify-self: flex-start;
-       max-width: 100px;
-    }
- }
- 
- .input-group label {
-    font-weight: 600;
- }
- 
- .input-group > label {
-    font-weight: 600;
-    color: var(--dark-gray);
-    font-size: 1.6rem;
-    padding-bottom: 5px;
- }
- 
- .input-group input {
-    margin-bottom: 1rem;
-    width: 100%;
- }
- 
- .input-group {
-    border-bottom: 2px solid var(--medium-gray);
-    margin: 3rem 0rem;
-    padding: 0rem 0rem 3rem 0rem;
- }
- 
- @media (min-width: 540px) {
-    .input-group.mobile-lg>.input-group-body {
-       padding-left: 125px;
-    }
- 
-    .input-group.mobile-lg>label {
-       word-wrap: break-word;
-       position: absolute;
-       width: 20%;
-    }
- 
-    .input-group.mobile-lg input {
-       width: auto;
-    }
- 
-    .input-group.mobile-lg .input-element input {
-       margin-bottom: 0;
-    }
- }
- 
- @media (min-width: 769px) {
-    .input-group.desktop>.input-group-body,
-    .input-group.widescreen>.input-group-body {
-       padding: 0;
-    }
- 
-    .input-group.desktop>label,
-    .input-group.widescreen>label {
-       position: relative;
-    }
- 
-    .input-group.tablet>.input-group-body, .input-group>.input-group-body {
-       padding-left: 150px;
-    }
- 
-    .input-group.tablet>label, .input-group>label {
-       word-wrap: break-word;
-       position: absolute;
-       width: 15%;
-    }
- 
-    .input-group.tablet .input-element input,
-    .input-group .input-element input {
-       margin-bottom: 0;
-       width: auto;
-    }
- }
- 
- @media (min-width: 1024px) {
-    .input-group.desktop>.input-group-body,
-    .input-group>.input-group-body {
-       padding-left: 175px;
-    }
- 
-    .input-group.desktop>label, .input-group>label {
-       word-wrap: break-word;
-       position: absolute;
-       width: 10%;
-    }
- 
-    .input-group.desktop .input-element input {
-       margin-bottom: 0;
-       width: auto;
-    }
- }
- 
- @media (min-width: 1220px) {
-    .input-group.widescreen>.input-group-body, .input-group>.input-group-body {
-       padding-left: 190px;
-    }
- 
-    .input-group.widescreen>label, .input-group>label {
-       word-wrap: break-word;
-       position: absolute;
-       width: 10%;
-    }
- 
-    .input-group.widescreen .input-element input {
-       margin-bottom: 0;
-       width: auto;
-    }
- }
+ label {
+   display: block;
+   margin-bottom: 1rem;
+   font-weight: 600;
+   font-size: 1.5rem;
+}
  
  textarea {
     font-family: 'Raleway';
@@ -1712,7 +1458,7 @@ html {
 .collection.links .collection-item {
    cursor: pointer;
    display: block;
-   padding: 10px;
+   padding: 15px;
    font-weight: 500 !important;
    line-height: inherit;
    color: inherit;
@@ -1926,7 +1672,7 @@ html {
    color: var(--dark-gray) !important;
 }
 
-.menu > .menu-item:hover > .menu > .menu-item:hover a {
+.menu > .menu-item:hover > .menu > .menu-item:hover a, .menu > .menu-item:hover > .menu > a.menu-item:hover {
    background: #ebebeb;
    color: var(--dark-gray) !important;
 }
