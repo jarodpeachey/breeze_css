@@ -26,7 +26,7 @@
 }
 
 .bg-primary .subtitle {
-   color: var(--white-transparent)
+   color: var(--white-transparent);
 }
 
 .bg-accent {
@@ -89,7 +89,7 @@ html {
 
 
 
-   --white-transparent: rgba(255, 255, 255, 0.753);
+   --white-transparent: rgba(255, 255, 255, 0.808);
 }
 
 /* LAYOUT AND GRID SYSTEM
@@ -1265,7 +1265,11 @@ html {
  /* Forms
  ---------------------------------------------------------------
  ---------------------------------------------------------------*/
- 
+ ::placeholder {
+    font-weight: 600;
+    color: var(--white-transparent);
+ }
+
  form {
     margin-top: 15px;
     width: 100%;
