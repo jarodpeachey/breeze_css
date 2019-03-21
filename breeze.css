@@ -1267,7 +1267,7 @@ html {
  ---------------------------------------------------------------*/
  ::placeholder {
     font-weight: 600 !important;
-    color: var(--white-transparent) !important;
+    color: var(--medium-gray) !important;
  }
 
  form {
