@@ -1265,7 +1265,7 @@ html {
  /* Forms
  ---------------------------------------------------------------
  ---------------------------------------------------------------*/
- ::placeholder {
+ ::placeholder, textarea::placeholder {
     font-weight: 600 !important;
     color: #8f8f8f !important;
  }
