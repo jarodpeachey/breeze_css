@@ -1266,8 +1266,8 @@ html {
  ---------------------------------------------------------------
  ---------------------------------------------------------------*/
  ::placeholder {
-    font-weight: 600;
-    color: var(--white-transparent);
+    font-weight: 600 !important;
+    color: var(--white-transparent) !important;
  }
 
  form {
