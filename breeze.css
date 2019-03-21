@@ -1268,6 +1268,7 @@ html {
  ::placeholder, textarea::placeholder {
     font-weight: 600 !important;
     color: #8f8f8f !important;
+    font-size: 14px !important;
  }
 
  form {
