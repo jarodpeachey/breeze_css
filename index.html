@@ -20,7 +20,7 @@
                <h1>BreezeCSS</h1>
             </div>
             <div class="navbar-right">
-               <ul class="menu">
+               <ul class="menu hidden-below-tablet">
                   <li class="menu-item with-menu">
                      <a href="#">Home</a>
                      <ul class="menu">
@@ -50,13 +50,26 @@
                      </ul>
                   </li>
                </ul>
+               <ul class="mobile menu">
+                  <li class="menu-item with-menu">
+                     <a href='' class='menu-click'>Menu</a>
+                     <ul class="menu mobile unclicked" id="mobileMenu">
+                        <div class="row p-2">
+                           <div class="col col-6">|||||| ||||||| |||||||</div>
+                           <div class="col col-6">|||||| ||||||| |||||||</div>
+                           <div class="col col-6">|||||| ||||||| |||||||</div>
+                           <div class="col col-6">|||||| ||||||| |||||||</div>
+                        </div>
+                     </ul>
+                  </li>
+               </ul>
             </div>
          </div>
       </nav>
    </div>
    <section id="grid" class="section">
       <div class="container">
-         <input type="text" class="display-inline"><button class="m-0">Button</button>
+
          <h2>Grid system</h2>
          <div class="row mobile">
             <div class="col"><div class="demo">Mobile</div></div>
