@@ -43,3 +43,16 @@ deleteBtn.addEventListener('click', (e) => {
    }
 
 })
+
+let menu = document.getElementById('mobileMenu');
+
+document.querySelector('.menu-click').addEventListener('click', function(e) {
+   e.preventDefault();
+   if (menu.classList.contains('unclicked')) {
+      menu.classList.add('clicked');
+      menu.classList.remove('unclicked');
+   } else {
+      menu.classList.add('unclicked');
+      menu.classList.remove('clicked');
+   }
+})
