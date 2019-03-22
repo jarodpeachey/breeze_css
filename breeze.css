@@ -1725,6 +1725,24 @@ nav.transparent .menu > .menu-item.with-menu:hover::before {
    z-index: -1;
 }
 
+.menu.mobile > .menu-item.with-menu:hover::after, .menu.mobile > .menu-item.with-menu:hover::before, .menu.mobile > .menu-item > .menu.unclicked {
+   display: none;
+}
+
+.menu.mobile > .menu-item.with-menu > .menu.clicked {
+   position: fixed;
+   display: block !important;
+   z-index: 500;
+   width: calc(100vw - 17px) !important;
+   top: 78px;
+   left: 0;
+   background: #e3e3e3;
+}
+
+.menu.mobile > .menu-item:hover .menu {
+   display: none;
+}
+
  /* Display & Positioning Modifiers
  ---------------------------------------------------------------
  ---------------------------------------------------------------*/
