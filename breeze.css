@@ -7,7 +7,7 @@
 /* Base Styling 
 -----------------------------------------------------------------*/
 .demo {
-   color: white;
+   color: #fff;
    background: var(--primary);
    text-align: center;
    border-radius: 4px;
