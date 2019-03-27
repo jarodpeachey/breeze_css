@@ -1262,12 +1262,6 @@ html {
  /* Forms
  ---------------------------------------------------------------
  ---------------------------------------------------------------*/
- ::placeholder, textarea::placeholder {
-    font-weight: 600 !important;
-    color: #8f8f8f !important;
-    font-size: 14px !important;
- }
-
  form {
     margin-top: 15px;
     width: 100%;
@@ -1385,8 +1379,11 @@ html {
    font-size: 1.5rem;
 }
  
- textarea {
+ textarea, input {
     font-family: 'Raleway';
+    font-weight: 600 !important;
+    color: #8f8f8f !important;
+    font-size: 14px !important;
  }
  
  
