@@ -1423,7 +1423,7 @@ textarea::placeholder, input::placeholder {
  }
  
  .collection-item {
-    padding: 15px;
+    padding: 12.5px;
     list-style: none;
     margin: 0;
     border: 1px solid var(--light-gray);
