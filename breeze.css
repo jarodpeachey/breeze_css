@@ -685,7 +685,7 @@ html {
  
  p {
     line-height: 2.5rem;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     letter-spacing: .05rem;
  }
 
@@ -1268,7 +1268,7 @@ html {
     border-radius: 4px;
     display: block;
     box-sizing: border-box;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
  }
  
  input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, 
