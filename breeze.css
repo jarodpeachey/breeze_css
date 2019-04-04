@@ -1585,7 +1585,7 @@ textarea::placeholder, input::placeholder {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background: white;
+   background: transparent;
    color: var(--dark-gray);
 }
 
