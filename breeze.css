@@ -709,13 +709,7 @@ html {
  }
  
  a:hover, a.hover { 
-    line-height: 1.5rem;
-    transition-duration: .5s;
-    box-shadow: 0px 2px 0px 0px var(--link-dark);
- }
- 
- a:hover:visited {
-    box-shadow: 0px 2px 0px 0px #3910cc;
+   color: var(--dark-gray);
  }
  
  a:visited, a.visited { color: #3910cc; }
