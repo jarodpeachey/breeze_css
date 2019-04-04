@@ -1377,7 +1377,6 @@ textarea::placeholder, input::placeholder {
    font-family: 'Raleway';
    font-weight: 500 !important;
    color: #888888;
-   font-size: 14px !important;
 }
 
  textarea {
