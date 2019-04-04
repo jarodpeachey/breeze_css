@@ -1268,6 +1268,7 @@ html {
     border-radius: 4px;
     display: block;
     box-sizing: border-box;
+    font-size: 1.6rem;
  }
  
  input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, 
@@ -1375,8 +1376,7 @@ html {
  
 textarea::placeholder, input::placeholder {
    font-family: 'Raleway';
-   font-weight: 500 !important;
-   color: #888888;
+   color: #616161;
 }
 
  textarea {
