@@ -2317,7 +2317,6 @@ ol ul {
 }
 
 .collection-item:hover {
-  cursor: pointer;
   box-shadow: none;
   position: static;
   line-height: inherit;
