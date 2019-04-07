@@ -20,7 +20,7 @@
 }
 
 .bg-primary {
-  background: #00c6e0;
+  background: var(--primary);
   color: white !important;
 }
 
