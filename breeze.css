@@ -2467,7 +2467,6 @@ code.element::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--dark-gray);
 }
 
 .navbar-left {
