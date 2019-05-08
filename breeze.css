@@ -2465,7 +2465,7 @@ code.element::after {
 }
 
 .navbar-left {
-  width: calc(33.333% - 20px);
+  flex: 1 1 0;
 }
 
 .navbar-left * {
@@ -2473,7 +2473,7 @@ code.element::after {
 }
 
 .navbar-right {
-  width: calc(66.666% -20px);
+  width: fit-content;
 }
 
 .menu {
