@@ -562,51 +562,51 @@ html {
     flex: 1 1 0 !important;
   }
 
-  .tablet-col-1 {
+  .row .tablet-col-1 {
     flex: none;
     width: 8.33333%;
   }
-  .tablet-col-2 {
+  .row .tablet-col-2 {
     flex: none;
     width: 16.66%;
   }
-  .tablet-col-3 {
+  .row .tablet-col-3 {
     flex: none;
     width: 25%;
   }
-  .tablet-col-4 {
+  .row .tablet-col-4 {
     flex: none;
     width: 33.33333%;
   }
-  .tablet-col-5 {
+  .row .tablet-col-5 {
     flex: none;
     width: 41.66667%;
   }
-  .tablet-col-6 {
+  .row .tablet-col-6 {
     flex: none;
     width: 50%;
   }
-  .tablet-col-7 {
+  .row .tablet-col-7 {
     flex: none;
     width: 58.33333%;
   }
-  .tablet-col-8 {
+  .row .tablet-col-8 {
     flex: none;
     width: 66.66667%;
   }
-  .tablet-col-9 {
+  .row .tablet-col-9 {
     flex: none;
     width: 75%;
   }
-  .tablet-col-10 {
+  .row .tablet-col-10 {
     flex: none;
     width: 83.33333%;
   }
-  .tablet-col-11 {
+  .row .tablet-col-11 {
     flex: none;
     width: 91.66667%;
   }
-  .tablet-col-12 {
+  .row .tablet-col-12 {
     flex: none;
     width: 100%;
   }
@@ -834,51 +834,51 @@ html {
     width: 100%;
   }
 
-  .desktop-col-1 {
+  .row .desktop-col-1 {
     flex: none;
     width: 8.33333%;
   }
-  .desktop-col-2 {
+  .row .desktop-col-2 {
     flex: none;
     width: 16.66%;
   }
-  .desktop-col-3 {
+  .row .desktop-col-3 {
     flex: none;
     width: 25%;
   }
-  .desktop-col-4 {
+  .row .desktop-col-4 {
     flex: none;
     width: 33.33333%;
   }
-  .desktop-col-5 {
+  .row .desktop-col-5 {
     flex: none;
     width: 41.66667%;
   }
-  .desktop-col-6 {
+  .row .desktop-col-6 {
     flex: none;
     width: 50%;
   }
-  .desktop-col-7 {
+  .row .desktop-col-7 {
     flex: none;
     width: 58.33333%;
   }
-  .desktop-col-8 {
+  .row .desktop-col-8 {
     flex: none;
     width: 66.66667%;
   }
-  .desktop-col-9 {
+  .row .desktop-col-9 {
     flex: none;
     width: 75%;
   }
-  .desktop-col-10 {
+  .row .desktop-col-10 {
     flex: none;
     width: 83.33333%;
   }
-  .desktop-col-11 {
+  .row .desktop-col-11 {
     flex: none;
     width: 91.66667%;
   }
-  .desktop-col-12 {
+  .row .desktop-col-12 {
     flex: none;
     width: 100%;
   }
@@ -1152,51 +1152,51 @@ html {
     width: 100%;
   }
 
-  .widescreen-col-1 {
+  .row .widescreen-col-1 {
     flex: none !important;
     width: 8.33333% !important;
   }
-  .widescreen-col-2 {
+  .row .widescreen-col-2 {
     flex: none !important;
     width: 16.66% !important;
   }
-  .widescreen-col-3 {
+  .row .widescreen-col-3 {
     flex: none !important;
     width: 25% !important;
   }
-  .widescreen-col-4 {
+  .row .widescreen-col-4 {
     flex: none !important;
     width: 33.33333% !important;
   }
-  .widescreen-col-5 {
+  .row .widescreen-col-5 {
     flex: none !important;
     width: 41.66667% !important;
   }
-  .widescreen-col-6 {
+  .row .widescreen-col-6 {
     flex: none !important;
     width: 50% !important;
   }
-  .widescreen-col-7 {
+  .row .widescreen-col-7 {
     flex: none !important;
     width: 58.33333% !important;
   }
-  .widescreen-col-8 {
+  .row .widescreen-col-8 {
     flex: none !important;
     width: 66.66667% !important;
   }
-  .widescreen-col-9 {
+  .row .widescreen-col-9 {
     flex: none !important;
     width: 75% !important;
   }
-  .widescreen-col-10 {
+  .row .widescreen-col-10 {
     flex: none !important;
     width: 83.33333% !important;
   }
-  .widescreen-col-11 {
+  .row .widescreen-col-11 {
     flex: none !important;
     width: 91.66667% !important;
   }
-  .widescreen-col-12 {
+  .row .widescreen-col-12 {
     flex: none !important;
     width: 100% !important;
   }
