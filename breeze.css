@@ -1580,6 +1580,15 @@ a.active {
   box-shadow: 0px 2px 0px 0px #003ec5;
 }
 
+.card {
+  box-shadow: 2px 1px 5px 0px #cacaca;
+  border-radius: 3px;
+}
+
+.card-main {
+  padding: 15px;
+}
+
 /* BUTTONS
  ---------------------------------------------------------------
  ---------------------------------------------------------------*/
