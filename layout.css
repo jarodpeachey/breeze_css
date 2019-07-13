@@ -1,6 +1,48 @@
 /* LAYOUT AND GRID SYSTEM
 --------------------------------------------------------------- */
 
+*::before,
+*::after,
+* {
+  box-sizing: inherit;
+}
+
+.bg-primary {
+  background: var(--primary);
+  color: white !important;
+}
+
+.bg-accent {
+  background: var(--accent);
+  color: white !important;
+}
+
+.bg-light {
+  background: var(--lightest-gray);
+}
+
+.bg-medium {
+  background: var(--light-gray);
+}
+
+.bg-dark {
+  background: var(--dark-gray);
+  color: white !important;
+}
+
+body {
+  width: 100%;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  overflow: auto;
+}
+
 :root {
   --space-none: 0px;
   --space-xxs: 4px;
@@ -1362,6 +1404,129 @@
   .widescreen-offset-none {
     margin: 0 !important;
   }
+}
+
+/* Navbar
+ ---------------------------------------------------------------
+ ---------------------------------------------------------------*/
+
+.navbar-content {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  flex: 1 1 0;
+}
+
+.navbar-left * {
+  margin: 0;
+}
+
+.navbar-right {
+  width: fit-content;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.menu-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  position: relative;
+}
+
+.menu-item > a {
+  padding: 15px;
+  line-height: 100%;
+  box-shadow: none;
+  color: inherit;
+  width: 100%;
+}
+
+.menu-item:hover > a {
+  color: var(--primary);
+  transition-duration: 0s;
+}
+
+.menu > .menu-item > .menu {
+  display: none;
+}
+
+.menu > .menu-item:hover > .menu {
+  display: block;
+  position: absolute;
+  top: 62px;
+  min-width: 175px;
+  width: auto;
+  background: #f1f1f1;
+  left: 0;
+}
+
+.menu > .menu-item:hover > .menu.left {
+  right: 0 !important;
+  left: auto;
+}
+
+.menu > .menu-item.with-menu:hover::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: transparent;
+  width: 120px;
+  height: 35px;
+  right: calc(50% - 60px);
+  top: 30px;
+}
+
+.menu > .menu-item.with-menu:hover::before {
+  content: '';
+  display: block;
+  background: #f1f1f1;
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: calc(62px - 7px);
+  right: calc(50% - 7px);
+  z-index: 0;
+}
+
+.menu > .menu-item:hover > .menu > .menu-item a {
+  background: transparent;
+  color: var(--dark-gray) !important;
+}
+
+.menu > .menu-item:hover > .menu > .menu-item:hover a,
+.menu > .menu-item:hover > .menu > a.menu-item:hover {
+  background: #ebebeb;
+  color: var(--dark-gray) !important;
+}
+
+.menu > .menu-item:hover > .menu.full-width {
+  position: fixed;
+  z-index: 500;
+  width: calc(100vw - 17px) !important;
+  top: 78px;
+  left: 0;
+}
+
+.menu > .menu-item:hover > .menu.left.full-width {
+  position: absolute;
+  width: calc(100vw - 17px) !important;
+  margin-right: -15px;
+  right: 0;
+  left: auto;
+  top: 62px;
 }
 
 /* Display & Positioning Modifiers
