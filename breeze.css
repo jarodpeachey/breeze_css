@@ -2234,6 +2234,10 @@ fieldset {
   display: block;
 }
 
+.input-element input {
+  width: 100%;
+}
+
 .input-element.small input {
   padding: 9px;
   font-size: 1.4rem;
