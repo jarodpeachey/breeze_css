@@ -46,6 +46,11 @@
   color: white !important;
 }
 
+.bg-white {
+  background: white !important;
+  color: var(--dark-gray);
+}
+
 body {
   width: 100%;
   overflow-x: auto;
@@ -83,7 +88,7 @@ html {
   --lighter-gray: #eeeeee;
   --light-gray: #e2e2e2;
   --medium-gray: #d8d8d8;
-  --dark-gray: #474747;
+  --dark-gray: #3a3a3a;
   --darkest-gray: #1a1a1a;
   --white-transparent: rgba(255, 255, 255, 0.808);
 
