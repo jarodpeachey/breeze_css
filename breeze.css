@@ -1594,9 +1594,15 @@ a.active {
   border-radius: 3px;
 }
 
-.card-main {
-  padding: 15px;
+.card.no-shadow {
+  box-shadow: none;
 }
+
+.card.border {
+  border: 1px solid #ddd;
+}
+
+
 
 /* BUTTONS
  ---------------------------------------------------------------
