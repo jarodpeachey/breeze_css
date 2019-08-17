@@ -2353,6 +2353,12 @@ ol ul {
   line-height: inherit;
 }
 
+.collection-item.head {
+  font-weight: bold;
+  font-size: 17px;
+  background: var(--lightest-gray);
+}
+
 .collection-item:hover {
   box-shadow: none;
   position: static;
@@ -2374,6 +2380,11 @@ ol ul {
   background: var(--lightest-gray);
   border: 1px solid #c2c2c2;
   border-bottom: none;
+}
+
+.collection.dark .collection-item.head {
+  background: var(--medium-gray);
+  border: 1px solid #c2c2c2;
 }
 
 .collection.dark .collection-item:last-child {
