@@ -1620,11 +1620,11 @@ input[type='button'] {
   background: transparent;
   color: var(--dark-gray);
   font-weight: bold;
-  letter-spacing: 0.05rem;
+  letter-spacing: 5px;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 15px;
   border-radius: 4px;
-  margin: 1rem 0px;
+  margin: 10px 0px;
   margin-right: 10px;
   text-align: center;
   text-transform: uppercase;
@@ -1647,12 +1647,12 @@ input[type='submit'].small,
 input[type='reset'].small,
 input[type='button'].small {
   padding: 8 16px;
-  font-size: 1.3rem;
+  font-size: 13px;
 }
 
 button.medium {
   padding: 13px 30px;
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 
 button.large,
@@ -1661,7 +1661,7 @@ input[type='submit'].large,
 input[type='reset'].large,
 input[type='button'].large {
   padding: 18px 40px;
-  font-size: 1.75rem;
+  font-size: 17.5px;
 }
 
 button.wide,
@@ -2003,7 +2003,7 @@ input[type='button'].no-background {
   padding-left: 0px;
   line-height: 20px;
   height: 20px;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 button.no-background:hover,
@@ -2159,7 +2159,7 @@ select {
   border-radius: 4px;
   display: block;
   box-sizing: border-box;
-  font-size: 1.5rem;
+  font-size: 15px;
 }
 
 input[type='email']:focus,
@@ -2222,7 +2222,7 @@ form .col {
 
 legend {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
   font-weight: 600;
   padding: 5px;
   color: var(--gray-text);
@@ -2235,7 +2235,7 @@ fieldset {
 }
 
 .input-element {
-  margin: 0 0 1rem 0;
+  margin: 0 0 10px 0;
   display: block;
 }
 
@@ -2245,54 +2245,54 @@ fieldset {
 
 .input-element.small input {
   padding: 9px;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 
 .input-element.medium input {
   padding: 13.8px;
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 
 .input-element.large input {
   padding: 18px;
-  font-size: 1.7rem;
+  font-size: 17px;
 }
 
 .input-element.small label {
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 
 .input-element.medium label {
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 
 .input-element.large label {
-  font-size: 1.7rem;
+  font-size: 17px;
 }
 
 @media (min-width: 540px) {
   .input-element {
-    margin: 0 0 1.4rem 0;
+    margin: 0 0 14px 0;
   }
 }
 
 @media (min-width: 769px) {
   .input-element {
-    margin: 0 0 1.8rem 0;
+    margin: 0 0 18px 0;
   }
 }
 
 @media (min-width: 1024px) {
   .input-element {
-    margin: 0 0 2rem 0;
+    margin: 0 0 20px 0;
   }
 }
 
 label {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   font-weight: 600;
-  font-size: 1.4999rem;
+  font-size: 14.999px;
 }
 
 textarea::placeholder,
@@ -2319,20 +2319,20 @@ ul {
 ul,
 ol {
   padding-left: 0;
-  line-height: 2rem;
-  margin-top: 1.2rem;
+  line-height: 2px;
+  margin-top: 12px;
 }
 
 li {
-  line-height: 2rem;
-  margin-bottom: 1.2rem;
+  line-height: 2px;
+  margin-bottom: 12px;
 }
 
 ul ul,
 ul ol,
 ol ol,
 ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
+  margin: 15px 0 15px 30px;
   font-size: 95%;
 }
 
@@ -2465,7 +2465,7 @@ code {
   background: var(--lighter-gray);
   padding: 2px 8px;
   border-radius: 4px;
-  font-size: 1.5rem;
+  font-size: 15px;
   color: var(--danger);
 }
 
@@ -2480,7 +2480,7 @@ code.element::after {
 .code-example {
   border: 2px solid var(--medium-gray);
   border-radius: 4px;
-  margin-bottom: 3rem;
+  margin-bottom: 30px;
 }
 
 .code-output {
@@ -2491,7 +2491,7 @@ code.element::after {
   display: block;
   padding: 20px;
   background: var(--medium-gray);
-  font-size: 1.4rem;
+  font-size: 14px;
   color: var(--dark-gray);
 }
 
